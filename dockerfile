@@ -18,4 +18,4 @@ RUN python preload_models.py
 
 # Expose & run
 EXPOSE 7860
-CMD ["gunicorn", "--bind", "0.0.0.0:7860", "main:app"]
+CMD ["gunicorn", "--bind", "0.0.0.0:7860", "app:app"]
