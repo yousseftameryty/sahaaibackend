@@ -2,13 +2,13 @@
 from transformers import pipeline
 import subprocess
 import time
-import ollama  # pip install ollama (already in reqs)
+import ollama  # from reqs
 
 # Preload HF model
 pipeline("image-classification", model="nateraw/food")
 print("HF model preloaded!")
 
-# Start Ollama & pull
+# Start Ollama & pull (as user, post-install)
 subprocess.Popen(["ollama", "serve"])  # Background
 time.sleep(10)
 ollama.pull("llama3.2:3b")
