@@ -10,3 +10,5 @@ requests==2.31.0
 ollama
 gunicorn
 requests
+fastapi
+uvicorn[standard]
